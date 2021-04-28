@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('assetes/fonts/Shabnam.woff') , url('assetes/fonts/Shabnam.woff2') format('.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Shabnam;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
