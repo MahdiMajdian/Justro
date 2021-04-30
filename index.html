@@ -7,13 +7,84 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 		<!-- style link -->
 		<link rel="stylesheet" href="style.css" />
-
+		<!-- Font Awesome Icons -->
+		<script src="https://kit.fontawesome.com/13e30f32fe.js" crossorigin="anonymous"></script>
 		<title>Justro</title>
 	</head>
 	<body>
-        <div class="container bg-success text-white">
-            <p>تست فونت شبنم</p>
-        </div>
+		<header class="container-fluid p-0">
+			<!-- Mobile nav -->
+			<nav class="navbar navbar-expand-sm bg-gray d-block d-md-none p-0">
+				<div class="container-fluid px-4 py-3 d-flex flex-row-reverse justify-content-between">
+					<div class="d-flex align-items-center" data-toggle="collapse" href="#navcollaps" role="button" aria-expanded="false" aria-controls="navcollaps">
+						<p class="mr-3 my-auto mobile-nav-color" style="font-size: 1.4rem">جاسترو</p>
+						<i class="fa fa-bars mobile-nav-color" style="font-size: 2rem"></i>
+					</div>
+					<div class="align-self-center" data-toggle="collapse" href="#navsearch" role="button" aria-expanded="false" aria-controls="navsearch">
+						<i class="fa fa-search mobile-nav-color" style="font-size: 2rem"></i>
+					</div>
+				</div>
+				<div class="collapse p-0 bg-gray-dark mobile-nav-color text-right" id="navsearch">
+					<div class="input-group px-4 py-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+						</div>
+						<input type="text" class="form-control text-right" style="background-color: #e9ecef" placeholder="...جستجو" aria-label="search" aria-describedby="basic-addon1" />
+					</div>
+				</div>
+				<div class="collapse p-0 bg-gray-dark mobile-nav-color text-right" id="navcollaps">
+					<ul class="px-4 py-2 list-unstyled" style="font-size: 1.2rem">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">صفحه اصلی</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">درباره ما</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">تماس با ما</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Desktop nav -->
+			<nav class="navbar navbar-expand-lg d-none d-md-flex flex-row-reverse justify-content-between py-4">
+				<div class="container-xl p-0 d-flex justify-content-between align-items-center">
+					<div class="wave"></div>
+					<div class="left">
+						<a href="#" class="red-button text-white text-decoration-none" style="font-size: 1.2rem; font-weight: bold"> دانلود </a>
+					</div>
+					<div class="middle">
+						<ul class="nav-list list-inline m-0">
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">تماس با ما</a>
+							</li>
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">همکاری با ما</a>
+							</li>
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">درباره ما</a>
+							</li>
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">ویژگی ها</a>
+							</li>
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">ایده ها</a>
+							</li>
+							<li class="list-inline-item m-0">
+								<a href="#" class="px-2 py-1 text-decoration-none menu">صفحه اصلی</a>
+							</li>
+						</ul>
+					</div>
+					<div class="right text-pistachio lead d-flex align-items-center">
+						<h4>جاسترو</h4>
+						<div class="logo1">
+							<img src="assetes/img/camel.jpg" class="img-fluid" alt="" />
+						</div>
+					</div>
+					<div class="ripple"></div>
+				</div>
+			</nav>
+		</header>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
