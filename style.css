@@ -83,7 +83,7 @@ a:visited {
 	.nav-list a {
 		font-size: 1rem;
 	}
-	.right h4{
+	.right h4 {
 		font-size: 1.4rem;
 	}
 	.left a {
@@ -92,5 +92,98 @@ a:visited {
 	.logo1 {
 		width: 4rem;
 		height: 4rem;
+	}
+}
+/* intro section */
+.intro {
+	position: relative;
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 70vh;
+}
+.intro-img img {
+	max-height: 25rem;
+	position: absolute;
+	z-index: 5;
+}
+.intro-title {
+	font-size: 2.8rem;
+}
+.better {
+	border-bottom: 2px solid #1f8360;
+}
+.logom {
+	height: 5rem;
+	width: 5rem;
+}
+.mobile-logo {
+	background: url(assetes/img/009_logo_Bg.svg) no-repeat;
+	background-position: right;
+	top: 100px;
+	right: 0;
+}
+@media screen and (max-width: 767px) {
+	.intro {
+		margin-top: 2rem;
+		height: 80vh;
+	}
+	.intro-title {
+		font-size: 2rem;
+		padding: 0 2rem;
+	}
+	.intro-text > p {
+		font-size: 0.85rem;
+		padding: 0 2rem;
+	}
+	.intro-img img {
+		max-width: 100%;
+		position: relative;
+	}
+}
+.intro-wavy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	flex-grow: 1;
+}
+.wavey {
+	width: 120vw;
+	height: 12rem;
+	position: absolute;
+	bottom: 0;
+	background: url(assetes/img/bg-wave.png);
+	background-position: right;
+	background-size: cover;
+	animation: move 5s infinite alternate ease-in-out;
+	z-index: 1;
+}
+.wavey2 {
+	width: 120vw;
+	height: 15rem;
+	position: absolute;
+	bottom: 0;
+	background: url(assetes/img/020_dlbox_bg2.svg);
+	background-position: left;
+	background-size: cover;
+	animation: wave 8s infinite alternate-reverse ease-in-out;
+	z-index: 2;
+}
+@keyframes move {
+	from {
+		transform: translateX(-40rem);
+	}
+	to {
+		transform: translateX(0rem);
+	}
+}
+@keyframes wave {
+	from {
+		transform: translateX(-60rem);
+	}
+	to {
+		transform: translateX(-25rem);
 	}
 }
