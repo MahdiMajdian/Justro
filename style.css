@@ -184,34 +184,7 @@ a:visited {
 	z-index: 2;
 }
 
-@media screen and (max-width: 767px) {
-	.intro {
-		margin-top: 2rem;
-	}
-	.intro-content > p {
-		font-size: 0.85rem;
-		padding: 0 2rem;
-	}
-	.intro-title {
-		font-size: 2rem;
-		padding: 0 2rem;
-	}
-	.intro-img img {
-		max-width: 100%;
-		position: relative;
-	}
-	.wave-1 {
-		animation: wave1 1s infinite alternate linear;
-	}
-	.wave-2 {
-		animation: wave2 2.5s infinite alternate-reverse linear;
-	}
-}
-@media screen and (min-width: 1100px) {
-	.intro-wave {
-		height: 10rem;
-	}
-}
+
 /* Page-2 */
 
 .info-middle {
@@ -240,7 +213,50 @@ a:visited {
 	z-index: -1;
 }
 /* Download section */
+.card{
+	border: none;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card input{
+	outline: none;
+	border: none;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.download-title h4{
+	color: #1f8360;
+}
+.download-icon{
+	width: 8rem;
+	height: 8rem;
+}
+.download-icon-ds{
+	width: 6rem;
+	height: 6rem;
+}
 
+.download-button{
+	width: 10rem;
+	align-self: center;
+	background: linear-gradient(180deg , #43F5B8,#2CA780);
+}
+.dlbox-mobile div{
+	width: 8rem;
+}
+.dlbox-desktop .red-button{
+	z-index: 1;
+	cursor: pointer;
+}
+.dlbox-desktop input{
+	transform: translateX(-2rem);
+	z-index: 0;
+}
+.dlbox-desktop input:focus{
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+.cafebazzar{
+	width: 1.5rem;
+	height: 1.5rem;
+}
 /* Media Queries */
 @media screen and (max-width: 1000px) {
 	.info-left {
@@ -275,5 +291,37 @@ a:visited {
 	}
 	.icon > i {
 		font-size: 1rem;
+	}
+}
+@media screen and (max-width: 767px) {
+	.intro {
+		margin-top: 2rem;
+	}
+	.intro-content > p {
+		font-size: 0.85rem;
+		padding: 0 2rem;
+	}
+	.intro-title {
+		font-size: 2rem;
+		padding: 0 2rem;
+	}
+	.intro-img img {
+		max-width: 100%;
+		position: relative;
+	}
+	.wave-1 {
+		animation: wave1 1s infinite alternate linear;
+	}
+	.wave-2 {
+		animation: wave2 2.5s infinite alternate-reverse linear;
+	}
+	.card{
+		border: none;
+		box-shadow: none;
+	}
+}
+@media screen and (min-width: 1100px) {
+	.intro-wave {
+		height: 10rem;
 	}
 }

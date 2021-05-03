@@ -127,7 +127,7 @@
 		<main>
 			<!-- Second/2nd Page -->
 			<section class="info">
-				<div class="container min-vh-100 d-flex flex-column flex-lg-row align-content-center py-5">
+				<div class="container min-vh-100 d-flex flex-column flex-lg-row align-items-center py-5">
 					<div class="row">
 						<div class="col-12 col-md-4 info-left text-center text-md-right order-3 order-md-0 my-auto">
 							<h4 class="text-pistachio">هتل ها، جستجو و رزرو کنید</h4>
@@ -137,7 +137,7 @@
 						</div>
 						<div class="col-12 col-md-4 info-middle d-flex justify-content-center">
 							<div class="info-line d-none d-md-block"></div>
-							<div class="container-fluid d-flex flex-md-column justify-content-around align-content-center">
+							<div class="container-fluid d-flex flex-md-column justify-content-around align-items-center">
 								<div class="icon mx-auto">
 									<i class="fa fa-binoculars"></i>
 								</div>
@@ -161,11 +161,59 @@
 					</div>
 				</div>
 			</section>
+
 			<!-- Third/3rd Page -->
 			<section class="download">
+				<div class="container mx-auto">
+					<div class="card p-3 py-5">
+						<!-- Download icon mobile version -->
+						<div class="download-icon mx-auto d-md-none">
+							<img src="assetes/img/021_dlbox_icon_download.svg" alt="" />
+						</div>
+						<!-- Box title -->
+						<div class="download-title text-center">
+							<h4>دانلود اپلیکیشن جاسترو</h4>
+							<p>شما می توانید با وارد کردن شماره همراه خود در کادر پایین، لینک دانلود اپلیکیشن را دریافت کنید</p>
+						</div>
+						<!-- Download Box Mobile Version -->
+						<div class="dlbox-mobile d-md-none form-group mx-auto">
+							<input type="tel" class="form-control rounded-pill my-3" id="" placeholder="09" />
+							<div class="red-button text-center p-auto m-auto text-white mb-3">دانلود</div>
+						</div>
+						<!-- Download Box Desktop version -->
+						<div class="dlbox-desktop container w-75 d-none d-md-flex justify-content-between my-3 align-items-center">
+							<div class="ml-5 d-flex">
+								<div class="red-button text-center p-auto m-auto text-white mb-3">دانلود</div>
+								<input type="tel" class="form-control pl-5 rounded-pill my-3" id="" placeholder="09" />
+							</div>
+							<div class="download-icon-ds mr-5 d-none d-md-flex">
+								<img src="assetes/img/021_dlbox_icon_download.svg" alt="" />
+							</div>
+						</div>
+						<!-- Download Options -->
+						<div class="download-link mx-auto text-center">
+							<p>یا از یکی از روش های زیر اپلیکیشن جاسترو رو دانلود کنید</p>
+							<div class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-center">
+								<div class="download-button d-flex text-white rounded-pill px-3 py-1 m-1 justify-content-center align-items-center">
+									<p class="m-0 p-1">کافه بازار</p>
+									<img src="assetes/img/bazar.png" class="cafebazzar my-auto" alt="" />
+								</div>
+
+								<div class="download-button d-flex text-white rounded-pill px-3 py-1 m-1 justify-content-center align-items-center">
+									<p class="m-0 p-1">Google Play</p>
+									<i class="fa fa-play my-auto m-0 p-1"></i>
+								</div>
+
+								<div class="download-button d-flex flex-grow-0 text-white rounded-pill px-3 py-1 m-1 justify-content-center align-items-center">
+									<p class="m-0 p-1 flex-grow-0">دانلود مستقیم</p>
+									<i class="fa fa-download flex-grow-0 my-auto m-0 p-1"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
-			<section class="prepare">
-			</section>
+			<section class="prepare"></section>
 		</main>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
