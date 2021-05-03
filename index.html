@@ -12,18 +12,18 @@
 		<title>Justro</title>
 	</head>
 	<body>
-		<header class="container-fluid p-0">
+		<header class="header container-fluid d-flex flex-column p-0">
 			<!-- Mobile nav -->
-			<nav class="navbar navbar-expand-sm bg-gray d-block d-md-none p-0">
+			<nav class="navbar navbar-expand-sm fixed-top bg-gray d-block d-md-none p-0">
 				<!-- Main nav -->
 				<div class="container-fluid px-4 py-3 d-flex flex-row-reverse justify-content-between">
 					<div class="d-flex align-items-center" data-toggle="collapse" href="#navcollaps" role="button" aria-expanded="false" aria-controls="navcollaps">
 						<p class="mr-3 my-auto mobile-nav-color" style="font-size: 1.4rem">جاسترو</p>
 						<i class="fa fa-bars mobile-nav-color" style="font-size: 2rem"></i>
 					</div>
-					<div class="align-self-center" data-toggle="collapse" href="#navsearch" role="button" aria-expanded="false" aria-controls="navsearch">
+					<button class="btn btn-pistachio rounded-lg d-sm-block d-lg-none" type="button" data-toggle="collapse" data-target="#navsearch" aria-expanded="false" aria-controls="navsearch">
 						<i class="fa fa-search mobile-nav-color" style="font-size: 2rem"></i>
-					</div>
+					</button>
 				</div>
 				<!-- Search collapse -->
 				<div class="collapse p-0 bg-gray-dark mobile-nav-color text-right" id="navsearch">
@@ -52,14 +52,15 @@
 			<!-- Mobile Logo -->
 			<div class="mobile-logo px-4 pt-4 d-flex d-md-none justify-content-end align-items-center">
 				<p style="font-size: 1.4rem; color: #1f8360">جاسترو</p>
-				<div class="logom mr-5">
+				<div class="logo-mobile mr-5">
 					<img src="assetes/img/camel.jpg" class="img-fluid" alt="" />
 				</div>
 			</div>
 			<!-- Desktop nav -->
 			<nav class="navbar navbar-expand-lg d-none d-md-flex flex-row-reverse justify-content-between py-4">
 				<div class="container-xl p-0 d-flex justify-content-between align-items-center">
-					<div class="wave"></div>
+					<div class="top-wave"></div>
+					<div class="top-ripple"></div>
 					<div class="left">
 						<a href="#" class="red-button text-white text-decoration-none" style="font-size: 1.2rem; font-weight: bold"> دانلود </a>
 					</div>
@@ -85,31 +86,29 @@
 							</li>
 						</ul>
 					</div>
-					<div class="right text-pistachio lead d-flex align-items-center">
-						<h4>جاسترو</h4>
-						<div class="logo1">
-							<img src="assetes/img/camel.jpg" class="img-fluid" alt="" />
+					<a class="right text-decoration-none" href="#">
+						<div class="text-pistachio lead d-flex align-items-center">
+							<h4>جاسترو</h4>
+							<div class="logo-desktop">
+								<img src="assetes/img/camel.jpg" class="img-fluid" alt="" />
+							</div>
 						</div>
-					</div>
-					<div class="ripple"></div>
+					</a>
 				</div>
 			</nav>
-		</header>
-		<main style="position: relative">
-			<section class="intro container-md">
-				<div class="row justify-content-lg-between px-0 d-flex flex-column-reverse flex-md-row">
+			<!-- introduction content -->
+			<section class="intro mb-5 container-md flex-grow-1">
+				<div class="row h-auto justify-content-lg-between px-0 d-flex flex-column-reverse flex-md-row">
 					<!-- Intro Photo -->
 					<div class="col-lg-7 col-md-7">
-						<div class="intro-img">
-							<img src="assetes/img/slide2-bg.png" alt="" />
-						</div>
+						<img src="assetes/img/slide2-bg.png" class="img-fluid intro-img" alt="" />
 					</div>
 					<!-- Intro Text -->
 					<div class="col-lg-5 col-md-5">
-						<div class="intro-text text-right">
+						<div class="intro-content text-right">
 							<div class="intro-title d-flex align-text-top align-items-start text-pistachio justify-content-end">
 								<p class="">سفر کنید</p>
-								<p class="better p-0 m-0">&nbspبهتر</p>
+								<p class="p-0 m-0">&nbspبهتر</p>
 							</div>
 							<p>
 								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و .کاربردهای متنوع
@@ -118,17 +117,54 @@
 						</div>
 					</div>
 				</div>
-				<div class="intro-wave">
-					<div class="wavey"></div>
-					<div class="wavey2"></div>
-				</div>
 			</section>
-			<section>
-				<div class="container">
+			<!-- Bottom Waves -->
+			<div class="intro-wave">
+				<div class="wave-1"></div>
+				<div class="wave-2"></div>
+			</div>
+		</header>
+		<main>
+			<!-- Second/2nd Page -->
+			<section class="info">
+				<div class="container min-vh-100 d-flex flex-column flex-lg-row align-content-center py-5">
 					<div class="row">
-						<div class="col-12 bg-primary lead">sgsdgsdg</div>
+						<div class="col-12 col-md-4 info-left text-center text-md-right order-3 order-md-0 my-auto">
+							<h4 class="text-pistachio">هتل ها، جستجو و رزرو کنید</h4>
+							<p class="text-justify text-right">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
+							</p>
+						</div>
+						<div class="col-12 col-md-4 info-middle d-flex justify-content-center">
+							<div class="info-line d-none d-md-block"></div>
+							<div class="container-fluid d-flex flex-md-column justify-content-around align-content-center">
+								<div class="icon mx-auto">
+									<i class="fa fa-binoculars"></i>
+								</div>
+								<div class="icon mx-auto">
+									<i class="fa fa-cutlery"></i>
+								</div>
+								<div class="icon mx-auto">
+									<i class="fa fa-bed"></i>
+								</div>
+								<div class="icon mx-auto">
+									<i class="fa fa-plane"></i>
+								</div>
+								<div class="icon mx-auto">
+									<i class="fa fa-location-arrow"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 info-right py-5 my-auto d-flex justify-content-center">
+							<img src="assetes/img/mobile.svg" class="img-fluid" alt="" />
+						</div>
 					</div>
 				</div>
+			</section>
+			<!-- Third/3rd Page -->
+			<section class="download">
+			</section>
+			<section class="prepare">
 			</section>
 		</main>
 
