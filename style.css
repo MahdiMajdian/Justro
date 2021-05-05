@@ -184,7 +184,6 @@ a:visited {
 	z-index: 2;
 }
 
-
 /* Page-2 */
 
 .info-middle {
@@ -213,65 +212,114 @@ a:visited {
 	z-index: -1;
 }
 /* Download section */
-.card{
+.card {
 	border: none;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-.card input{
+.card input {
 	outline: none;
 	border: none;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-.download-title h4{
+.download-title h4 {
 	color: #1f8360;
 }
-.download-icon{
+.download-icon {
 	width: 8rem;
 	height: 8rem;
 }
-.download-icon-ds{
+.download-icon-ds {
 	width: 6rem;
 	height: 6rem;
 }
 
-.download-button{
+.download-button {
 	width: 10rem;
 	align-self: center;
-	background: linear-gradient(180deg , #43F5B8,#2CA780);
+	background: linear-gradient(180deg, #43f5b8, #2ca780);
 }
-.dlbox-mobile div{
+.dlbox-mobile div {
 	width: 8rem;
 }
-.dlbox-desktop .red-button{
+.dlbox-desktop .red-button {
 	z-index: 1;
 	cursor: pointer;
 }
-.dlbox-desktop input{
+.dlbox-desktop input {
 	transform: translateX(-2rem);
 	z-index: 0;
 }
-.dlbox-desktop input:focus{
+.dlbox-desktop input:focus {
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
-.cafebazzar{
+.cafebazzar {
 	width: 1.5rem;
 	height: 1.5rem;
 }
+/* Prepare section */
+.prepare {
+	min-width: 100vw;
+	/* background: url(assetes/img/022_bg_amadegisafar.svg) no-repeat;
+	background-size: contain;
+	background-position: top; */
+}
+
+.bg-img {
+	position: relative;
+}
+.bg-img > .red-button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+.prepare-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+.img2 {
+	height: 14rem;
+	width: 100%;
+	opacity: 0.6;
+}
+/* Scroll image section */
+.scroll-box {
+	height: 10rem;
+	overflow-x: auto;
+}
+.scroll-img {
+	height: 100%;
+	margin: 0 0.5rem;
+}
+.scroll-img img {
+	width: 15rem;
+}
+
 /* Media Queries */
 @media screen and (max-width: 1000px) {
 	.info-left {
 		font-size: 0.875rem;
 	}
+	.prepare-box {
+		font-size: 0.75rem;
+	}
+	.prepare-box h3 {
+		font-size: 1.4rem;
+		color: #1f8360;
+	}
 }
 @media screen and (min-width: 767px) {
 	.info {
-		height: 100vh;
+		min-height: 100vh;
 	}
 	.download {
-		height: 50vh;
+		min-height: 50vh;
 	}
 	.prepare {
-		height: 50vh;
+		min-height: 25vh;
 	}
 }
 
@@ -291,6 +339,9 @@ a:visited {
 	}
 	.icon > i {
 		font-size: 1rem;
+	}
+	.prepare-box {
+		font-size: 0.75rem !important;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -315,9 +366,13 @@ a:visited {
 	.wave-2 {
 		animation: wave2 2.5s infinite alternate-reverse linear;
 	}
-	.card{
+	.card {
 		border: none;
 		box-shadow: none;
+	}
+	.prepare-box {
+		color: #212121;
+		font-size: 1rem;
 	}
 }
 @media screen and (min-width: 1100px) {
