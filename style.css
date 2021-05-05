@@ -321,6 +321,17 @@ a:visited {
 	padding-right: 0.25rem;
 	width: 8rem;
 }
+/* Footer */
+footer {
+	width: 100vw;
+	height: 15rem;
+	background-image: url(assetes/img/025_footer_Bg.svg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+footer > img {
+}
 /* Media Queries */
 @media screen and (max-width: 1000px) {
 	.info-left {
