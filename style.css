@@ -37,6 +37,9 @@ a:visited {
 .bg-gray-dark {
 	background-color: #dadada;
 }
+.bg-sub {
+	background-color: #e4fffa;
+}
 /* Page-1 styles */
 .header {
 	width: 100%;
@@ -297,7 +300,27 @@ a:visited {
 .scroll-img img {
 	width: 15rem;
 }
-
+/* Subscription section */
+.btn-sub {
+	border: 0;
+	padding: 0.5rem 2rem;
+	background: linear-gradient(180deg, #f68667, #e05633);
+}
+.btn-sub:active {
+	background: linear-gradient(90deg, #f68667, #e05633);
+}
+.mobile-sub * {
+	margin: 1.5rem 0;
+}
+.desktop-sub {
+	width: 25rem;
+}
+.desktop-sub > div {
+	transform: translateX(2.5rem);
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+	width: 8rem;
+}
 /* Media Queries */
 @media screen and (max-width: 1000px) {
 	.info-left {
